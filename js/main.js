@@ -1,3 +1,42 @@
+/*===== RENDER SNEAKERS =====*/ 
+let allSneakers = [];
+
+const getSneakers = async () => {
+    try{
+        const response = await fetch('../assets/json/sneakers.json')
+        if(response.status === 200){
+            const mySneakers = await response.json()
+            return mySneakers.sneakers
+        }else if(response.status === 404){
+            console.log("Error 404. API URL not found");
+        }
+    }catch(error){
+        console.log(error);
+    }
+}
+
+const renderAllSneakers = async () => {
+    const $sneakers = document.getElementById("sneakers");
+    allSneakers = await getSneakers();
+
+    let cardSneakers = "";
+
+    allSneakers.map((sneaker)=>{
+        cardSneakers += `
+        <article class="sneaker">
+            <img src="${sneaker.imageProduct}" alt="" class="sneake__img">
+            <span class="sneaker__name">${sneaker.titleProduct}</span>
+            <span class="sneaker__price">${sneaker.price}</span>
+            <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+        </article>
+        `
+    })
+
+    $sneakers.innerHTML = cardSneakers;
+}
+
+renderAllSneakers();
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId)=>{
     const toggle = document.getElementById(toggleId),
@@ -51,3 +90,5 @@ window.onscroll = ()=>{
     if(this.scrollY >= 200) nav.classList.add("scroll-header");
     else nav.classList.remove("scroll-header");
 }
+
+/*===== SHOPPING CART=====*/

@@ -40,6 +40,17 @@
   --rotate-img: rotate(-30deg);
 }
 
+@media screen and (min-width: 768px) {
+  :root{
+      /*===== Font and typography =====*/
+      --big-font-size: 1.5rem;
+      --bigger-font-size: 2rem;
+      --biggest-font-size: 3rem;
+      --normal-font-size: 1rem;
+      --smaller-font-size: .875rem;
+  }
+}
+
 /*===== BASE =====*/
 *, ::before, ::after{
   box-sizing: border-box;
@@ -131,6 +142,19 @@ img{
   align-items: center;
 }
 
+@media screen and (max-width: 769px) {
+  .nav__menu{
+      position: fixed;
+      top: var(--header-height);
+      left: -100%;
+      width: 70%;
+      height: 100vh;
+      padding: 2rem;
+      background-color: var(--white-color);
+      transition: .5s;
+  }
+}
+
 .nav__item{
   margin-bottom: var(--mb-4);
 }
@@ -139,7 +163,7 @@ img{
   font-weight: var(--font-semi-bold);
 }
 
-.nav__toggle, .nav__shop{
+.nav__toggle, .nav__shop, .nav__login{
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -309,6 +333,20 @@ img{
 
 .sneaker:hover{
   transform: translateY(-.5rem);
+}
+
+.sneaker__pages{
+  margin-top: var(--mb-6);
+}
+
+.sneaker__pag{
+  padding: .5rem 1rem;
+  border: 1px solid var(--dark-color);
+}
+
+.sneaker__pag:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
 }
 
 /*===== COLLECTION =====*/

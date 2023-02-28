@@ -1,0 +1,90 @@
+{ "sneakers":[
+    {
+        "id": 1,
+        "titleProduct": "Nike Jordan",
+        "imageProduct": "../assets/img/featured1.png",
+        "brand": "Nike",
+        "price": 149.99,
+        "stock": 1
+    },
+    {
+        "id": 2,
+        "titleProduct": "Nike Free RN",
+        "imageProduct": "../assets/img/featured2.png",
+        "brand": "Nike",
+        "price": 149.99,
+        "stock": 1
+    },
+    {
+        "id": 3,
+        "titleProduct": "Nike Free RN",
+        "imageProduct": "../assets/img/featured3.png",
+        "brand": "Nike",
+        "price": 149.99,
+        "stock": 1
+    },
+    {
+        "id": 4,
+        "titleProduct": "Adidas Yeezy",
+        "imageProduct": "../assets/img/new2.png",
+        "brand": "Adidas",
+        "price": 99.99,
+        "stock": 1
+    },
+    {
+        "id": 5,
+        "titleProduct": "Adidas Yeezy",
+        "imageProduct": "../assets/img/new3.png",
+        "brand": "Adidas",
+        "price": 99.99,
+        "stock": 1
+    },
+    {
+        "id": 6,
+        "titleProduct": "Adidas Yeezy",
+        "imageProduct": "../assets/img/new4.png",
+        "brand": "Adidas",
+        "price": 99.99,
+        "stock": 1
+    },
+    {
+        "id": 7,
+        "titleProduct": "Adidas Yeezy",
+        "imageProduct": "../assets/img/new5.png",
+        "brand": "Adidas",
+        "price": 99.99,
+        "stock": 1
+    },
+    {
+        "id": 8,
+        "titleProduct": "Nike Women",
+        "imageProduct": "../assets/img/women1.png",
+        "brand": "Nike",
+        "price": 129.99,
+        "stock": 1
+    },
+    {
+        "id": 9,
+        "titleProduct": "Nike Women",
+        "imageProduct": "../assets/img/women2.png",
+        "brand": "Nike",
+        "price": 129.99,
+        "stock": 1
+    },
+    {
+        "id": 10,
+        "titleProduct": "Nike Women",
+        "imageProduct": "../assets/img/women3.png",
+        "brand": "Nike",
+        "price": 129.99,
+        "stock": 1
+    },
+    {
+        "id": 11,
+        "titleProduct": "Nike Women",
+        "imageProduct": "../assets/img/women4.png",
+        "brand": "Nike",
+        "price": 129.99,
+        "stock": 1
+    }
+]}
